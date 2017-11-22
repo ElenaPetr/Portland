@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	max-width: 1400px;
+}
+
+.container {
+	max-width:100%;
+}
+	
+.header {
+	border-bottom: 1px solid #f0f2f7;
+	height:90px;
+}
+
+.menu {
+	height:90px;
+	border-right:1px solid #f0f2f7;
+	padding-right:2.5rem;
+	padding-top: 2rem;
+}
+
+.logo {
+	padding-left:2rem;
+	margin-right:9.81rem;
+}
+
+.link {
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	font-weight: 600;
+	color:#343e5c;
+	margin-right:1.875rem;
+	text-decoration:none;
+}
+
+.link:hover {
+	color:#343e5c;
+}
+
+.shopping {
+	margin-left: 5.9375rem;
+}
+
+.cart {
+	color:#343e5c;
+	font-family: 'Montserrat', sans-serif;
+	font-size:11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding:0 5px;
+}
+
+.badge {
+	border-radius:50%;
+	background-color:#e3e8f0;
+	padding:0.375rem 0.46875rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size:11px;
+	margin-right: 1.5625rem;
+}
