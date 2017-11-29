@@ -1,6 +1,12 @@
 $(function(){
-	$('.menu').on('click', function(){
- 	 	$('.nav').toggle();
-	});
+
+	var menu = document.getElementById('toggler');
+    var title = menu.querySelector('.li');
+
+    title.onclick = function() {
+      menu.classList.toggle('open');
+    };
+
 });
+   
 
