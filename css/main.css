@@ -149,7 +149,6 @@ body {
 /*top filter*/
 
 .top-filter{
-  /*height:55px;*/
   margin:0;
 }
 
@@ -324,6 +323,9 @@ display: inline-block;
 	top:18.5px;
 	right:18px;
 	background:url(../icons/Open-Icon.png) no-repeat;
+}
+.ul-category{
+	list-style: none; 
 }
 .dropdown{
 	text-transform: uppercase;

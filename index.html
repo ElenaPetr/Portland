@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<title>portland</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,7 +12,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/main.js"></script>
 
 </head>
 <body class="bg-gray">
@@ -43,7 +44,7 @@
 			</div>
 
 			<div class="my-2 my-lg-0">
-				<img class="shopping-icon" src="icons/Shopping-Cart-Icon.png">
+				<img class="shopping-icon" src="icons/Shopping-Cart-Icon.png" alt="shopping-cart-icon">
 				<span class="cart-icon text-uppercase ml-lg-1">cart</span>
 				<span class="badge icon ml-lg-1 mr-lg-4">0</span>
 				<button type="button" class="btn text-uppercase btn-sign-in ml-lg-1">sign in</button>
@@ -86,7 +87,7 @@
 				<div class="form-search">
 					<form class="form-inline">
 						<button class="btn form-btn ml-3 p-1" type="submit">
-							<img src="icons/Search-Icon.png"/>
+							<img src="icons/Search-Icon.png" alt="search-icon"/>
 						</button>
 						<input class="form-control search ml-1" type="search" placeholder="I'm looking for..." aria-label="Search"></form>
 				</div>
@@ -152,8 +153,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- </div>
-			-->
 			<!-- main content -->
 			<div class="row row-products">
 				<!-- left menu -->
@@ -162,28 +161,28 @@
 					<div class="categories">
 						<ul class="list-group">
 							<li class="list-group-item category">
-								<a class="category-link li" href="#">Top Sales</a>
+								<span class="category-link li">Top Sales</span>
 							</li>
 							<li class="list-group-item category">
-								<a class="category-link li" href="#">Brand Focus</a>
+								<span class="category-link li">Brand Focus</span>
 							</li>
 
 							<li class="list-group-item category hi-tech" id="toggler">
 								<span class="category-link li">Hi-Tech</span>
-								<ul>
-									<a class="category-link dropdown" href="#">Cell Phones</a>
-									<a class="category-link dropdown" href="#">Cameras</a>
-									<a class="category-link dropdown" href="#">Computers</a>
-									<a class="category-link dropdown" href="#">Tv. Audio</a>
-									<a class="category-link dropdown" href="#">Video Games</a>
+								<ul class="ul-category">
+									<li><a class="category-link dropdown" href="#">Cell Phones</a></li>
+									<li><a class="category-link dropdown" href="#">Cameras</a></li>
+									<li><a class="category-link dropdown" href="#">Computers</a></li>
+									<li><a class="category-link dropdown" href="#">Tv. Audio</a></li>
+									<li><a class="category-link dropdown" href="#">Video Games</a></li>
 								</ul>
 							</li>
 
 							<li class="list-group-item category">
-								<a class="category-link li" href="#">Home</a>
+								<span class="category-link li">Home</span>
 							</li>
 							<li class="list-group-item category last">
-								<a class="category-link li" href="#">Sale</a>
+								<span class="category-link li">Sale</span>
 							</li>
 						</ul>
 					</div>
