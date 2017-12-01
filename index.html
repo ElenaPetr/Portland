@@ -42,12 +42,12 @@
 				</ul>
 			</div>
 
-			<ul class=" my-2 my-lg-0">
+			<div class="my-2 my-lg-0">
 				<img class="shopping-icon" src="icons/Shopping-Cart-Icon.png">
 				<span class="cart-icon text-uppercase ml-lg-1">cart</span>
 				<span class="badge icon ml-lg-1 mr-lg-4">0</span>
 				<button type="button" class="btn text-uppercase btn-sign-in ml-lg-1">sign in</button>
-			</ul>
+			</div>
 
 		</nav>
 		<nav class="navbar navbar-expand-lg navbar-light navbar-categories">
@@ -99,153 +99,195 @@
 	</section>
 	<!-- main -->
 	<section>
-		<div class="container">
+		<div class="container main">
 			<!-- top filter -->
+			<div class="row top-filter">
+				<div class="col-12 rounded">
+					<div class="row top-filter">
+						<!-- sort by -->
+						<div class="col-xl-auto p-0 bg-white ">
+							<div class="sort-by rounded-left bg-white mr-auto">
+								<label class="m-0">Sort by:</label>
+								<select class="select-filter">
+									<option class="option-filter">Best Match</option>
+									<option>Best Match</option>
+									<option>Best Match</option>
+									<option>Best Match</option>
+								</select>
+							</div>
+						</div>
+						<!-- keywords and price-->
+						<div class="col-xl-auto p-0 bg-white">
+							<div class="keywords bg-white mr-auto">
+								<label class="label-keywords">Keywords</label>
+								<input class="input-keywords" type="text" placeholder="Tablet"></div>
+						</div>
+						<div class="col-xl-auto p-0 bg-white">
+							<div class="price bg-white mr-auto">
+								<label class="label-price">Price:</label>
+								<div class="grid-price mx-auto">
+									<input class="input-price" type="text" placeholder="10">
+									<span>-</span>
+									<input class="input-price" type="text" placeholder="1000"></div>
+							</div>
+						</div>
+						<div class="col-xl-auto p-0 bg-white">
+							<!-- shipping -->
+							<div class="shipping bg-white mr-auto">
+								<label class="form-check-label">
+									<input class="form-check-input" 
+                            type="checkbox" id="inlineCheckbox1">Free Shipping</label>
+							</div>
+							<!-- ship to -->
+							<div class="ship rounded-right bg-white mr-auto">
+								<label class="m-0 label-ship">Ship to:</label>
+								<select class="select-ship">
+									<option class="option-filter" style="direction: rtl;">USA</option>
+									<option>UA</option>
+									<option>RU</option>
+									<option>BG</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- </div>
+			-->
+			<!-- main content -->
+			<div class="row row-products">
+				<!-- left menu -->
+				<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 products">
+					<!-- categories -->
+					<div class="categories">
+						<ul class="list-group">
+							<li class="list-group-item category">
+								<a class="category-link li" href="#">Top Sales</a>
+							</li>
+							<li class="list-group-item category">
+								<a class="category-link li" href="#">Brand Focus</a>
+							</li>
+
+							<li class="list-group-item category hi-tech" id="toggler">
+								<span class="category-link li">Hi-Tech</span>
+								<ul>
+									<a class="category-link dropdown" href="#">Cell Phones</a>
+									<a class="category-link dropdown" href="#">Cameras</a>
+									<a class="category-link dropdown" href="#">Computers</a>
+									<a class="category-link dropdown" href="#">Tv. Audio</a>
+									<a class="category-link dropdown" href="#">Video Games</a>
+								</ul>
+							</li>
+
+							<li class="list-group-item category">
+								<a class="category-link li" href="#">Home</a>
+							</li>
+							<li class="list-group-item category last">
+								<a class="category-link li" href="#">Sale</a>
+							</li>
+						</ul>
+					</div>
+					<!-- available & brands-->
+					<div class="row"></div>
+					<!-- condition -->
+					<div class="row"></div>
+					<!-- delivery options -->
+					<div class="row"></div>
+				</div>
+				<!-- products -->
+				<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-8">
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="card product"></div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+							<div class="card product"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- pagination -->
+			<div class="row row-pagination">
+				<div class="col-12 bg-white rounded col-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<!-- best sellers -->
+	<section>
+		<div class="container">
 			<div class="row">
-				<!-- sort by -->
-				<div class="col-xl-3 bg-white col-sort">
-					<!-- sort by:<span class="btn-sort">Best Match</span>
-				-->
+				<div class="col-12 bg-white rounded-top best-sellers"></div>
 			</div>
-			<!-- keywords and price-->
-			<div class="col-xl-6 bg-white col-price"></div>
-			<!-- ship to -->
-			<div class="col-xl-3 bg-white col-ship"></div>
-		</div>
-		<!-- main content -->
-		<div class="row">
-			<!-- left menu -->
-			<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
-				<!-- categories -->
-				<div class="catigories">
-					<ul class="list-group">
-						<li class="list-group-item category">
-							<a class="category-link li" href="#">Top Sales</a>
-						</li>
-						<li class="list-group-item category">
-							<a class="category-link li" href="#">Brand Focus</a>
-						</li>
-
-						<li class="list-group-item category hi-tech" id="toggler">
-							<span class="category-link li">Hi-Tech</span>
-							<ul>
-								<a class="category-link dropdown" href="#">Cell Phones</a>
-								<a class="category-link dropdown" href="#">Cameras</a>
-								<a class="category-link dropdown" href="#">Computers</a>
-								<a class="category-link dropdown" href="#">Tv. Audio</a>
-								<a class="category-link dropdown" href="#">Video Games</a>
-							</ul>
-						</li>
-
-						<li class="list-group-item category">
-							<a class="category-link li" href="#">Home</a>
-						</li>
-						<li class="list-group-item category last">
-							<a class="category-link li" href="#">Sale</a>
-						</li>
-					</ul>
-				</div>
-				<!-- available & brands-->
-				<div class="row"></div>
-				<!-- condition -->
-				<div class="row"></div>
-				<!-- delivery options -->
-				<div class="row"></div>
-			</div>
-			<!-- products -->
-			<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
-				<div class="row">
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-8">
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4" >
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-						<div class="card product"></div>
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-						<div class="card product"></div>
+			<div class="row">
+				<div class="col-12 bg-white sellers rounded-bottom">
+					<div class="row">
+						<div class="col-3 col-best-sellers">
+							<div class="card card-best-sellers m-auto rounded-0"></div>
+						</div>
+						<div class="col-3 col-best-sellers">
+							<div class="card card-best-sellers m-auto rounded-0"></div>
+						</div>
+						<div class="col-3 col-best-sellers">
+							<div class="card card-best-sellers m-auto rounded-0"></div>
+						</div>
+						<div class="col-3 col-best-sellers">
+							<div class="card card-best-sellers m-auto rounded-0 border-0"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- pagination -->
-		<div class="row row-pagination">
-			<div class="col-12 bg-white rounded col-pagination"></div>
-		</div>
-	</div>
-</section>
-<!-- best sellers -->
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 bg-white rounded-top best-sellers"></div>
-		</div>
-		<div class="row">
-			<div class="col-12 bg-white sellers rounded-bottom">
-				<div class="row">
-					<div class="col-3 col-best-sellers">
-						<div class="card card-best-sellers m-auto rounded-0"></div>
-					</div>
-					<div class="col-3 col-best-sellers">
-						<div class="card card-best-sellers m-auto rounded-0"></div>
-					</div>
-					<div class="col-3 col-best-sellers">
-						<div class="card card-best-sellers m-auto rounded-0"></div>
-					</div>
-					<div class="col-3 col-best-sellers">
-						<div class="card card-best-sellers m-auto rounded-0 border-0"></div>
-					</div>
+	</section>
+	<!-- customer review -->
+	<section class="bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-caption text-center">
+					<h1>What Our Customers Have to Say</h1>
+					<p class="caption">Couple of Words About This Stories Section</p>
+
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<!-- customer review -->
-<section class="bg-white">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-caption text-center">
-				<h1>What Our Customers Have to Say</h1>
-				<p class="caption">Couple of Words About This Stories Section</p>
-
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4"></div>
+				<div class="col-4"></div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-4"></div>
-			<div class="col-4"></div>
-			<div class="col-4"></div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12"></div>
+			</div>
 		</div>
-	</div>
-</section>
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-12"></div>
-		</div>
-	</div>
-</footer>
+	</footer>
 </body>
 </html>
