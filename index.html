@@ -102,90 +102,176 @@
 	<section>
 		<div class="container main">
 			<!-- top filter -->
-			<div class="row top-filter">
-				<div class="col-12 rounded">
-					<div class="row top-filter">
-						<!-- sort by -->
-						<div class="col-xl-auto p-0 bg-white ">
-							<div class="sort-by rounded-left bg-white mr-auto">
-								<label class="m-0">Sort by:</label>
-								<select class="select-filter">
-									<option class="option-filter">Best Match</option>
-									<option>Best Match</option>
-									<option>Best Match</option>
-									<option>Best Match</option>
-								</select>
-							</div>
-						</div>
-						<!-- keywords and price-->
-						<div class="col-xl-auto p-0 bg-white">
-							<div class="keywords bg-white mr-auto">
-								<label class="label-keywords">Keywords</label>
-								<input class="input-keywords" type="text" placeholder="Tablet"></div>
-						</div>
-						<div class="col-xl-auto p-0 bg-white">
-							<div class="price bg-white mr-auto">
-								<label class="label-price">Price:</label>
-								<div class="grid-price mx-auto">
-									<input class="input-price" type="text" placeholder="10">
-									<span>-</span>
-									<input class="input-price" type="text" placeholder="1000"></div>
-							</div>
-						</div>
-						<div class="col-xl-auto p-0 bg-white">
-							<!-- shipping -->
-							<div class="shipping bg-white mr-auto">
-								<label class="form-check-label">
-									<input class="form-check-input" 
-                            type="checkbox" id="inlineCheckbox1">Free Shipping</label>
-							</div>
-							<!-- ship to -->
-							<div class="ship rounded-right bg-white mr-auto">
-								<label class="m-0 label-ship">Ship to:</label>
-								<select class="select-ship">
-									<option class="option-filter" style="direction: rtl;">USA</option>
-									<option>UA</option>
-									<option>RU</option>
-									<option>BG</option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="rounded d-flex filter-flex bg-white">
+
+  <!-- sort by-->
+
+ <div class="sort-by rounded-left bg-white mr-auto">
+    <label>Sort by:</label>
+    <select class="select-sort">
+      <option class="option-filter">Best Match</option>
+      <option>Best Match</option>
+      <option>Best Match</option>
+      <option>Best Match</option>
+    </select>
+    <div class="select-arrow-sort"></div>
+  </div>
+
+  <!-- keywords and price-->
+
+  <div class="keywords bg-white">
+    <label class="label-keywords">Keywords</label>
+    <input class="input-keywords" type="text" placeholder="Tablet"></div>
+
+  <div class="price bg-white mx-auto">
+    <label class="label-price">Price:</label>
+
+    <div class="grid-price">
+      <input class="input-price" type="number" value="10">
+      <span>-</span>
+      <input class="input-price" type="number" value="1000"></div>
+  </div> 
+
+  <!-- shipping -->
+   <div class="shipping bg-white">
+    <label class="form-check-label label-shipping">
+      <input class="form-check-input input-shipping" 
+                            type="checkbox" id="inlineCheckbox1" value="Free Shipping">
+      Free Shipping
+      <div class="free-ship"></div>
+    </label>
+  </div> 
+  <!-- ship to -->
+  <div class="ship rounded-right bg-white ml-auto">
+
+    <label class="m-0 label-ship">Ship to:</label>
+    <select class="select-ship">
+      <option class="option-filter">USA</option>
+      <option>UA</option>
+      <option>RU</option>
+      <option>BG</option>
+    </select>
+
+    <div class="select-arrow"></div>
+  </div>
+
+</div> 
+
 			<!-- main content -->
 			<div class="row row-products">
 				<!-- left menu -->
 				<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 products">
-					<!-- categories -->
-					<div class="categories">
-						<ul class="list-group">
-							<li class="list-group-item category">
-								<span class="category-link li">Top Sales</span>
-							</li>
-							<li class="list-group-item category">
-								<span class="category-link li">Brand Focus</span>
-							</li>
+					<ul class="list-group categories">
+          <li class="list-group-item category" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" 
+          aria-controls="collapse1">
+            <span class="category-link li" href="#">Top Sales</span>
+              <ul class="collapse" id="collapse1">
+              <li>
+                <a class="category-link dropdown" href="#">Cell Phones</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Cameras</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Computers</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Tv. Audio</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Video Games</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item category" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" 
+          aria-controls="collapse2">
+            <span class="category-link li" href="#">Brand Focus</span>
+              <ul class="collapse" id="collapse2">
+              <li>
+                <a class="category-link dropdown" href="#">Cell Phones</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Cameras</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Computers</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Tv. Audio</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Video Games</a>
+              </li>
+            </ul>
+          </li>
 
-							<li class="list-group-item category hi-tech" id="toggler">
-								<span class="category-link li">Hi-Tech</span>
-								<ul class="ul-category">
-									<li><a class="category-link dropdown" href="#">Cell Phones</a></li>
-									<li><a class="category-link dropdown" href="#">Cameras</a></li>
-									<li><a class="category-link dropdown" href="#">Computers</a></li>
-									<li><a class="category-link dropdown" href="#">Tv. Audio</a></li>
-									<li><a class="category-link dropdown" href="#">Video Games</a></li>
-								</ul>
-							</li>
+          <li class="list-group-item category" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" 
+          aria-controls="collapse3">
+  
+            <span class="category-link li">Hi-Tech</span>
 
-							<li class="list-group-item category">
-								<span class="category-link li">Home</span>
-							</li>
-							<li class="list-group-item category last">
-								<span class="category-link li">Sale</span>
-							</li>
-						</ul>
-					</div>
+            <ul class="collapse" id="collapse3">
+              <li>
+                <a class="category-link dropdown" href="#">Cell Phones</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Cameras</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Computers</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Tv. Audio</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Video Games</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="list-group-item category" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" 
+          aria-controls="collapse4">
+            <span class="category-link li" href="#">Home</span>
+              <ul class="collapse" id="collapse4">
+              <li>
+                <a class="category-link dropdown" href="#">Cell Phones</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Cameras</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Computers</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Tv. Audio</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Video Games</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item category last" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" 
+          aria-controls="collapse5">
+            <span class="category-link li" href="#">Sale</span>
+              <ul class="collapse" id="collapse5">
+              <li>
+                <a class="category-link dropdown" href="#">Cell Phones</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Cameras</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Computers</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Tv. Audio</a>
+              </li>
+              <li>
+                <a class="category-link dropdown" href="#">Video Games</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 					<!-- available & brands-->
 					<div class="row"></div>
 					<!-- condition -->
