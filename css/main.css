@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  transition: .2s ease-in-out .1s;
 }
 /*body*/
 body {
@@ -75,7 +74,6 @@ body {
 	letter-spacing: 1px;
 	width:80px;
 	background-color: transparent;
-	/*margin-right: 2.5625rem;*/
 }
 
 /*navbar-categories*/
@@ -141,7 +139,7 @@ body {
     border:none;
     color:#343e5c;
   }
-	/*********************************/
+	/*carousel*/
 
 .carousel {
 	height:500px;
@@ -190,7 +188,6 @@ body {
   text-transform:uppercase;
   width:154px;
 }
-
 /*keywords*/
 .keywords{
   padding:12px 0 12px 15px;
@@ -216,7 +213,6 @@ display: inline-block;
 .price{
   padding:12px 0;
 }
-
 .input-price{
   width:64px;
   border-radius: 30px;
@@ -231,13 +227,11 @@ display: inline-block;
 }
 /*free-shipping*/
 .shipping{
-  /*display: inline-block;*/
  padding:18px 5px 18px 20px;
  color:#343e5c;
  font-size:13px;
  font-weight: 700;
 }
-
 .label-shipping{
  position:relative;
 }
@@ -265,6 +259,7 @@ display: inline-block;
   background-image: url(../icons/Check-Icon5.png);
   opacity: 0;
 }
+
 .label-shipping:hover input ~ .free-ship, .sort-by:hover select, .ship:hover select{
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
 }
@@ -306,24 +301,17 @@ display: inline-block;
   display: none; /*убираем галочку в IE*/
 }
   
-
-
-
 /*left menu */
 .categories{
   margin-bottom: 30px;
 }
-
 .products{
   margin: 15px 0;
 }
-
 ul{
   list-style: none; 
 }
-
 .category {
-  /*max-width:270px;*/
   padding: 0;
   margin-bottom:0;
   border: none;
@@ -331,8 +319,8 @@ ul{
   box-sizing: border-box;
   font-size: 13px;
   font-weight: 700;
+   transition: .2s ease-in-out .1s;
   }
-
 .category-link {
  display:block;
   height: 42px;
@@ -341,11 +329,9 @@ ul{
   cursor:pointer;
   text-decoration:none;
 }
-
  .category:not(:last-child)>.category-link{
    border-bottom: 1px solid #f0f2f7;
  }
-
  .li::after{
     content:" ";
     position:absolute;
@@ -356,15 +342,12 @@ ul{
     right:18px;
     background:url(../icons/Open-Icon1.png) no-repeat;
 }
-
 .category:hover {
   background: #F0F8FF;
 }
-
 .category[aria-expanded="true"]>.category-link{
   border-bottom:1px solid #dfe4ee;
 }
-
 .category[aria-expanded="true"] .li::after{
   content:" ";
   position:absolute;
@@ -375,10 +358,10 @@ ul{
   right:18px;
   background:url(../icons/Open-Icon.png) no-repeat;
 }
-
 .dropdown{
   text-transform: uppercase;
   background:#f0f2f7;
+   transition: .2s ease-in-out .1s;
 }
 .dropdown a{
   color:#a1a7bd;
@@ -407,6 +390,93 @@ ul{
 .shipping-wrap{
   display: inline-block;
   padding-left: 10px;
+}
+/*available*/
+.li-balance {
+  padding: 0;
+  margin-bottom:0;
+  color:#343e5c;
+  box-sizing: border-box;
+  font-size: 13px;
+  border:none;
+  font-weight: 700;
+  }
+  .form-balance{
+    padding:9px 20px 10px 55px;
+     border-bottom:1px solid #f0f2f7;
+  }
+  .balance-label{
+    display: block;
+    padding:9px 0;
+    margin:0;
+    cursor: pointer;
+    position:relative;
+    transition: none;
+  }
+  .balance-label:hover .button{
+     box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+  }
+  .balance-label input{
+    opacity: 0;
+  }                       
+  .button{
+position:absolute;
+top: 9px;
+left: -35px;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+border:2px solid #e4e8f0;
+  }
+ .dot{
+  width:0;
+  height:0;
+  border:4px solid #00deea;
+  border-radius: 50%;
+  margin:4px auto;
+  opacity: 0;
+ }
+ .balance-label input:checked ~ .button .dot{
+  opacity: 1;
+}
+.checkbox{
+  border-radius: 5px;
+}
+.checkbox:before{
+  position:absolute;
+  top: 7px;
+  left: 5px;
+  content:" ";
+  display:block;
+  width:10px;
+  height:7px;
+  background-image: url(../icons/Check-Icon5.png);
+}
+ .balance-label input:checked ~ .checkbox{
+  border:none;
+  background-color:#00e2aa;
+}
+.form-name{
+  height:48px;
+  line-height: 48px;
+  border-bottom:1px solid #f0f2f7;
+  display: block;
+  padding:0 20px;
+  text-transform:uppercase;
+  color:#343e5c;
+  font-size:11px;
+  font-weight: 700;
+}
+.form-name a{
+  float:right;
+  text-decoration: underline;
+  color:#2754eb;
+}
+.balance{
+  float: right;
+  font-size:11px;
+  color:#b8bfd3;
+  font-weight: 600;
 }
 
 /*products*/
