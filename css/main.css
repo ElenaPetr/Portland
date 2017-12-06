@@ -421,10 +421,11 @@ ul{
   .balance-label:hover .button{
      box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
   }
-  .balance-label input{
+  .balance-label input, .form-check-label input{
     opacity: 0;
   }                       
   .button{
+display: block;
 position:absolute;
 top: 9px;
 left: -35px;
@@ -434,6 +435,7 @@ border-radius: 50%;
 border:2px solid #e4e8f0;
   }
  .dot{
+  display:block;
   width:0;
   height:0;
   border:4px solid #00deea;
@@ -486,6 +488,24 @@ border:2px solid #e4e8f0;
   font-size:11px;
   color:#b8bfd3;
   font-weight: 600;
+}
+/*delivery*/
+.form-delivery{
+  padding:5.5px 35px 5.5px 55px;
+  margin:0;
+  width:50%;
+  float:left;
+}
+.b-left{
+  border-left:1px solid #f0f2f7;
+}
+.form-delivery .balance-label{
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size: 12px;
+}
+.form-delivery .balance-label>.button{
+  top:7px;
 }
 
 /*products*/
