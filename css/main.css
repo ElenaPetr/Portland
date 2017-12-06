@@ -153,7 +153,7 @@ body {
   margin:0;
 }
 .filter-flex{
-  margin:0 15px;
+  margin:0 15px 15px 15px;
 }
 /*sort-by*/
 .sort-by{
@@ -305,7 +305,7 @@ display: inline-block;
 }
   
 /*left menu */
-.categories{
+.categories:not(:last-child){
   margin-bottom: 30px;
 }
 .products{
@@ -521,14 +521,110 @@ border:2px solid #e4e8f0;
 padding:0;
 }
 .product {
-	height: 23.750em;
-	background-color: gray;
+	background-color: white;
 	margin: 15px 0;
 }
 
 .card{
 	border:none;
+  text-align: center;
 }
+
+.card-image{
+  margin-bottom:20px;
+}
+
+.card-img-top{
+  margin:30px auto 0 auto;
+}
+.img-product{
+  border:none;
+  width:75%;
+  margin:30px auto 0 auto;
+  border-radius:0;
+}
+.pebble img{
+    width:90%
+}
+.pebble{
+  margin-bottom: 6.5px;
+}
+.zendure img {
+  width:100%;
+}
+.analyzer{
+  padding-top: 44.4px;
+  margin-bottom:31px;
+}
+.product-body{
+  padding-bottom: 45px;
+  padding-top:7.5px;
+  line-height: 1;
+   font-weight: 600;
+}
+.jbl{
+  background:url(../images/JBL-Charge-2+.jpg) no-repeat;
+  background-position-x:30%;
+  background-color: white;
+    }
+.JBL-Charge {
+text-align: left;
+margin-bottom: 0;
+height:306px;
+}
+.jbl .product-body{
+  padding-bottom: 18px;
+  padding-top: 16px;
+  text-align: justify;
+}
+
+.jbl .card-price{
+  display: inline-block;
+  color:white;
+  padding:2.5px 7px 2.5px 10.5px;
+  margin:11px;
+  background:#1c1e23;
+  border-radius: 4px;
+  font-size:12px;
+  letter-spacing: 1px;
+}
+.jbl .product-body>.product-title{
+  margin-bottom: 8px;
+}
+.fitbit{
+  padding-bottom: 25px;
+}
+.product-title{
+  font-size: 1em;
+  color:#1c1e23;
+ margin-bottom: 14px;
+  line-height: 20px;
+   font-weight: 600;
+}
+.product-color{
+  text-transform: uppercase;
+  color:#b8bfd3;
+  font-size:0.75em;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.product-price{
+  font-size: 0.875em;
+  color:#343e5c;
+  font-weight: 700;
+}
+.hifi{
+  /*padding-bottom:274px;*/
+  padding-top: 38px;
+}
+.nest{
+  background:url(../images/Layer-9.jpg) no-repeat;
+  background-position:50% 7%;
+  height:380px;
+}
+
+
+
 .col-pagination, .sellers{
 	margin-bottom: 50px;
 }
