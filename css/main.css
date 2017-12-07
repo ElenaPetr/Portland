@@ -563,15 +563,20 @@ padding:0;
    font-weight: 600;
 }
 .jbl{
-  background:url(../images/JBL-Charge-2+.jpg) no-repeat;
-  background-position-x:30%;
   background-color: white;
-    }
+  height:380px;
+  overflow: hidden;
+}
+
 .JBL-Charge {
 text-align: left;
 margin-bottom: 0;
 height:306px;
+background: url(../images/JBL-Charge-2+.png) no-repeat;
+background-position-x: 44%;
+background-size:115%;
 }
+
 .jbl .product-body{
   padding-bottom: 18px;
   padding-top: 16px;
@@ -590,7 +595,53 @@ height:306px;
 }
 .jbl .product-body>.product-title{
   margin-bottom: 8px;
+  display: inline-block;
 }
+.title{
+  float: left;
+  margin-right: auto;
+}
+
+/*button*/
+
+.button-buy{
+  display: flex;
+  float:right;
+  padding:6.5px 0; 
+}
+.btn-buy{
+  width:14.1875rem;
+}
+
+.btn-buy label{
+  margin:0;
+  padding:6.5px 0;
+  font-size: 0.6875em;
+  text-transform: uppercase;
+  color:#3a405b;
+  font-weight:700;
+  letter-spacing: 1px;
+}
+.btn-buy label:hover, .btn-buy label:focus, .btn-buy label:active{
+  background-color:#F8F8FF; 
+}
+
+.btn-gb{
+  border:2px solid #f0f2f7;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  text-align: center;
+  width: 50%
+}
+.btn-by{
+   border:2px solid #f0f2f7;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   width: 50%;
+  text-align: center;
+}
+
+
 .fitbit{
   padding-bottom: 25px;
 }
@@ -614,7 +665,6 @@ height:306px;
   font-weight: 700;
 }
 .hifi{
-  /*padding-bottom:274px;*/
   padding-top: 38px;
 }
 .nest{
@@ -622,9 +672,7 @@ height:306px;
   background-position:50% 7%;
   height:380px;
 }
-
-
-
+/*pagination*/
 .col-pagination, .sellers{
 	margin-bottom: 50px;
 }
