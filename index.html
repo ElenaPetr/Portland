@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>portland</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="OwlCarousel2-2.2.1 (1)/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="OwlCarousel2-2.2.1 (1)/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -15,7 +15,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="OwlCarousel2-2.2.1 (1)/OwlCarousel2-2.2.1/dist/owl.carousel.js"></script>
+	<script src="OwlCarousel2-2.2.1/dist/owl.carousel.js"></script>
 	<script src="js/main.js"></script>
 
 </head>
@@ -665,32 +665,94 @@
 			</div>
 			<!-- end row -->
 			<!-- pagination -->
-			<div class="row row-pagination">
-				<div class="col-12 bg-white rounded col-pagination"></div>
-			</div>
-		</div>
+			<div class="row row-products">
+				<div class="col-12 products">
+					<nav class="nav-pagination rounded" aria-label="Page navigation example">
+  <ul class="pagination ul-pagination justify-content-between align-items-center">
+
+    <li class="page-item disabled previous">
+      <a class="page-link" href="#" tabindex="-1"><img src="icons/Next-Icon2.png" alt="previous"></a>
+    </li>
+    <li class="page-item">
+    	<ul class="pagination pagination-sm justify-content-center">
+		    <li class="page-item li-page"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item li-page"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item li-page"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item li-page active"><a class="page-link" href="#">4 <span class="sr-only">(current)</span></a></li>
+		    <li class="page-item li-page"><a class="page-link" href="#">5</a></li>
+		    <li class="page-item li-page"><a class="page-link" href="#">6</a></li>
+		    <li class="page-item li-page"><a class="page-link" href="#">7</a></li>
+		    <li class="page-item li-page"><a class="page-link" href="#">8</a></li>
+    	</ul>
+	</li>
+    <li class="page-item next">
+      <a class="page-link" href="#"><img src="icons/Next-Icon1.png" alt="next"></a>
+    </li>
+  </ul>
+</nav>
+				</div>
+			</div> 
+		<!-- </div> -->
 		<!-- end container-main -->
 	</section>
 	<!-- best sellers -->
 	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-12 bg-white rounded-top best-sellers"></div>
+		<div class="container container-seller">
+			<div class="row row-products">
+				<div class="col-12 best-sellers products"><p class="text-center m-0 bg-white rounded-top">best sellers</p></div>
 			</div>
-			<div class="row">
-				<div class="col-12 bg-white sellers rounded-bottom">
+			<div class="row row-products">
+				<div class="col-12 sellers rounded-bottom product">
 					<div class="row">
-						<div class="col-3 col-best-sellers">
-							<div class="card card-best-sellers m-auto rounded-0"></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-best-sellers">
+							<div class="card card-best-sellers rounded-0">
+								
+								<div class="card-image">
+									<img class="card-img-top img-product" src="images/Photo.png" alt="Beanie"></div>
+								<div class="card-body product-body sellers-body">
+									<h4 class="card-title product-title">Beanie</h4>
+									<p class="card-text product-color">Green</p>
+									<p class="card-text product-price old-price">£39.99</p>
+									<p class="card-text product-price">£29.99</p>
+								</div>
+							
+							</div>
 						</div>
-						<div class="col-3 col-best-sellers">
-							<div class="card card-best-sellers m-auto rounded-0"></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-best-sellers">
+							<div class="card card-best-sellers rounded-0">
+								<div class="card-image">
+									<img class="card-img-top img-product" src="images/photo2.jpg" alt="Beanie"></div>
+								<div class="card-body product-body sellers-body">
+									<h4 class="card-title product-title">T-Shirt With a Print</h4>
+									<p class="card-text product-color">Dark Blue</p>
+									<p class="card-text product-price old-price">£29.99</p>
+									<p class="card-text product-price">£19.99</p>
+								</div>
+							</div>
 						</div>
-						<div class="col-3 col-best-sellers">
-							<div class="card card-best-sellers m-auto rounded-0"></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-best-sellers">
+							<div class="card card-best-sellers rounded-0">
+								<div class="card-image">
+									<img class="card-img-top img-product" src="images/photo3.jpg" alt="Beanie"></div>
+								<div class="card-body product-body sellers-body">
+									<h4 class="card-title product-title">Pile-Lined Hooded Jacket</h4>
+									<p class="card-text product-color">Dark Blue</p>
+									<p class="card-text product-price old-price">£49.99</p>
+									<p class="card-text product-price">£39.99</p>
+								</div>
+							</div>
 						</div>
-						<div class="col-3 col-best-sellers">
-							<div class="card card-best-sellers m-auto rounded-0 border-0"></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-best-sellers">
+							<div class="card card-best-sellers rounded-0 border-0">
+								<div class="card-image">
+									<img class="card-img-top img-product" src="images/photo4.jpg" alt="Beanie"></div>
+								<div class="card-body product-body sellers-body">
+									<h4 class="card-title product-title">Trainers</h4>
+									<p class="card-text product-color">Space Grey</p>
+									<p class="card-text product-price old-price">£39.99</p>
+									<p class="card-text product-price">£29.99</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -744,18 +744,126 @@ background-size:115%;
   height:380px;
 }
 /*pagination*/
-.col-pagination, .sellers{
+.nav-pagination{
+  /*margin-bottom: 50px;*/
+  width: 100%;
+  background-color: white;
+}
+.ul-pagination{
+  height:90px;
+}
+
+.page-item:first-child .page-link, .page-item:last-child .page-link{
+  border:none;
+  border-radius: none;
+}
+.li-page .page-link{
+  box-sizing: border-box;
+  border:none;
+  padding:15.5px 20px;
+   border-radius: 50%;
+  font-size: 14px;
+  color:#3a405b;
+  font-weight: 600;
+  margin:0 4px;
+  /*line-height: 48px;*/
+}
+.li-page:first-child .page-link, .li-page:last-child .page-link{
+  border-radius: 50%;
+}
+.previous a, .next a{
+  height: 90px;
+  padding:35px 95px;
+   
+}
+.previous a{
+  border-right:1px solid #f0f2f7 !important;
+}
+.next a{
+   border-left:1px solid #f0f2f7 !important;
+}
+
+.page-link:hover{
+  color:#b9bed1;
+  background-color: transparent;
+
+}
+.page-item.active .page-link{
+  font-size: 13px;
+  /*z-index: 6;*/
+  /*display: inline-block;*/
+  color:#b9bed1;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 20px 66px rgba(168,172,185, 0.7); 
+  padding:15.5px 20px;
+  /*#a8acb9;*/
+}
+
+.container-seller{
+ margin: 1.875rem auto;
+  padding: 0 2.494%;
+}
+.sellers{
+  margin-top: 0;
 	margin-bottom: 50px;
 }
-/*.best-sellers{
-	border-bottom:1px solid #f0f2f7;
-}*/
-.sellers{
-	overflow: hidden;
+.best-sellers{
+  margin-bottom: 0;
 }
+.best-sellers p{
+   padding: 19px;
+   border-bottom:1px solid #f0f2f7;
+  font-size: 11px;
+  font-weight: 700;
+  color:#343e5c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .card-best-sellers{
 	border-right: 1px solid #f0f2f7;
+  /*height:340px;*/
 }
+.card-best-sellers .card-image{
+   /*display: table-cell;*/
+  height:235px;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.card-best-sellers .img-product{
+  /*display: inline-block;*/
+  width:188.3px;
+  height: auto;
+  margin:0;
+  padding:0;
+
+}
+.card-best-sellers .product-body{
+  padding-bottom: 0;
+}
+.sellers-body .product-title{
+  margin-bottom: 10px;
+  color:#343e5c;
+}
+.sellers-body .product-color{
+margin-bottom: 20px;
+font-size: 11px;
+}
+.sellers-body .product-price{
+  display:inline-block;
+}
+.sellers-body .old-price{
+  margin-right: 20px;
+  color:#a1a8bd;
+  text-decoration: line-through;
+}
+
+
+
+
+
+
 
 .col-caption{
 	padding:4.5625rem;
