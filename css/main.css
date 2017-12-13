@@ -742,7 +742,7 @@ background-size:115%;
 }
 .page {
   width:97.514%;
-  padding:1.75% 0;
+
    margin: 0 15px;
   background-color: white;
   display:block;
@@ -755,16 +755,16 @@ background-size:115%;
 }
 .page-item
 {
-  margin-left: 10px;
+  margin-left: 1vw;
+    padding:1.75% 0;
 }
 
 
 .page-numbers{
     display: inline-block;
-    /*background: white;*/
-    height: 50px; 
-    width: 50px;
-    line-height: 50px;
+    height:calc(3vw + 0.85em);
+     width:calc(3vw + 0.85em);
+    line-height:calc(3vw + 0.85em);
     text-align: center;
     border-radius: 50%;
     font-size: 14px;
@@ -774,16 +774,21 @@ background-size:115%;
 .page-item:first-child .page-link, .page-item:last-child .page-link {
   border:none;
   border-radius: 50%;
+
 }
 
 .page-item:first-child {
   border-right:1px solid #f0f2f7 !important;
   float:left;
+  padding-right:5.65vw;
+   padding-left: 5.65vw;
 }
 
 .page-item:last-child {
   float:right;
   border-left:1px solid #f0f2f7 !important;
+  padding-right: 5.65vw;
+   padding-left: 5.65vw;
 }
 
 .pagination-sm .page-item:first-child .page-link,.pagination-sm .page-item:last-child .page-link,
@@ -796,16 +801,11 @@ background-size:115%;
   /*background-color: white;*/
 }
 
-.page-item.active .page-numbers, .page-numbers:hover {
+.page-item.active .page-numbers, .page-numbers:hover{
   font-size: 13px;
-  z-index: 6;
-  /*display: inline-block;*/
+  /*z-index: 6;*/
   color:#b9bed1;
-  border-radius: 50%;
-  background-color: white;
   box-shadow: 0 20px 66px rgba(168,172,185, 0.7); 
-  /*padding:15.5px 20px;*/
-  /*#a8acb9;*/
 }
 
 /*best sellers*/
@@ -921,4 +921,14 @@ font-size: 11px;
 	color:#cfd2df;
   margin-top: 15px;
   margin-bottom: 46px;
+}
+
+@media(max-width: 576px){
+
+  .page-item:first-child, .page-item:last-child{
+  padding-right:2vw;
+   padding-left:2vw;
+}
+
+
 }
