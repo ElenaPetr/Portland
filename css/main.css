@@ -144,10 +144,12 @@ body {
 .slide{
   background-color:#1c1e23;
   color:white;
+  height: calc(27vw + 10rem);
 }
 .col-slide{
-  max-height: 500px;
+  /*max-height: 500px;*/
   display:inline-block;
+  position: relative;
 }
  
 .card-group{
@@ -155,18 +157,22 @@ body {
 }
 
 .owl-carousel .owl-item img{
-  float:left;
-  height: 172%;
+  position:absolute;
+height: 174%;
+/*width:28%;*/
+/*height:auto;*/
   width:auto;
-margin-top: -66px;
-margin-left: 24px;
-
+/*top:50%;
+transform: translateY(-50%);*/
+right:20%;
+top:-14%;
 }
 .text{
-  width:50%;
+  margin-left: 7vw;
+  /*width:50%;*/
   display: inline-block;
-  float:left;
-margin-top:8.6%;
+  position: absolute;
+margin-top:8vw;
 z-index: 20;
 font-family: 'Montserrat', sans-serif;
 padding-left: 3.313rem;
@@ -177,17 +183,18 @@ padding-top: 0.625rem;
 .text h3{
   /*display: inline-block;*/
   margin-bottom: 10px;
-  font-size: 42px;
+  font-size:calc(2.4vw + 0.5em);
   font-weight: 900;
   line-height: 1;
 }
 
 .p-slide{
   /*display: inline-block;*/
-  z-index: 20;
+  /*z-index: 20;*/
   font-family: 'Crimson Text', serif;
-  font-size: 18px;
-  line-height: 24px;
+  /*font-size: 18px;*/
+   font-size:calc(1vw + 0.5em);
+  /*line-height: 24px;*/
   
 }
 
@@ -202,7 +209,8 @@ padding-top: 0.625rem;
   font-weight: 600;
   border-radius: 30px;
   border:none;
-  margin-top: 65px;
+
+  margin-top: 5.4vw;
   text-transform: uppercase;
 }
 .btn-slide:focus{
@@ -593,62 +601,56 @@ padding:0;
 .card{
   border:none;
   text-align: center;
+  min-height:380px;
+  overflow: hidden;
 }
 
 .card-image{
-  margin-bottom:20px;
+  line-height:254px;
+  margin-bottom:2px;
 }
 
-.card-img-top{
-  margin:30px auto 0 auto;
-}
 .img-product{
+  vertical-align: middle;
   border:none;
   width:75%;
-  margin:30px auto 0 auto;
   border-radius:0;
 }
-.pebble img{
-    width:90%
-}
-.pebble{
-  margin-bottom: 6.5px;
-}
-.zendure img {
-  width:100%;
-}
-.analyzer{
-  padding-top: 44.4px;
-  margin-bottom:31px;
-}
+
 .product-body{
-  padding-bottom: 45px;
-  padding-top:7.5px;
+  height:124px;
+  padding-top:7px;
   line-height: 1;
-   font-weight: 600;
+  font-weight: 600;
 }
-.jbl{
+.ful-card-img{
   background-color: white;
   height:380px;
   overflow: hidden;
 }
 
-.JBL-Charge {
+.full-card-img .card-image {
+  overflow: hidden;
 text-align: left;
 margin-bottom: 0;
 height:306px;
-background: url(../images/JBL-Charge-2+.png) no-repeat;
-background-position-x: 44%;
-background-size:115%;
+line-height: 0;
+}
+.full-card-img .card-image img{
+  width:100%;
+  height:auto;
 }
 
-.jbl .product-body{
-  padding-bottom: 18px;
-  padding-top: 16px;
+.full-card-img .card-body{
+  padding-bottom: 15px;
+  padding-top: 15px;
   text-align: justify;
 }
 
-.jbl .card-price{
+.full-card-img .card-price{
+  position: absolute;
+  top:0;
+  left:0;
   display: inline-block;
   color:white;
   padding:2.5px 7px 2.5px 10.5px;
@@ -656,10 +658,11 @@ background-size:115%;
   background:#1c1e23;
   border-radius: 4px;
   font-size:12px;
-  letter-spacing: 1px;
+  letter-spacing:1px;
+  line-height: 1;
 }
-.jbl .product-body>.product-title{
-  margin-bottom: 8px;
+.full-card-img .card-body .title>.product-title{
+  margin-bottom: 6px;
   display: inline-block;
 }
 .title{
@@ -705,7 +708,6 @@ background-size:115%;
    width: 50%;
   text-align: center;
 }
-
 .fitbit{
   padding-bottom: 25px;
 }
@@ -728,13 +730,25 @@ background-size:115%;
   color:#343e5c;
   font-weight: 700;
 }
-.hifi{
-  padding-top: 38px;
-}
+
 .nest{
-  background:url(../images/Layer-9.jpg) no-repeat;
-  background-position:50% 7%;
-  height:380px;
+  overflow: hidden;
+}
+.nest .card-image{
+  margin-bottom: 0;
+
+}
+.nest img{
+ width:100%;
+
+  /*min-height:380px;*/
+}
+.nest .product-body{
+  width:100%;
+  position: absolute;
+  top:29px;
+  left:50%;
+  transform: translateX(-50%);
 }
 
 .page-item {
@@ -753,13 +767,10 @@ background-size:115%;
   display: block;
   text-align: center;
 }
-.page-item
-{
+.page-item{
   margin-left: 1vw;
     padding:1.75% 0;
 }
-
-
 .page-numbers{
     display: inline-block;
     height:calc(3vw + 0.85em);
@@ -774,9 +785,7 @@ background-size:115%;
 .page-item:first-child .page-link, .page-item:last-child .page-link {
   border:none;
   border-radius: 50%;
-
 }
-
 .page-item:first-child {
   border-right:1px solid #f0f2f7 !important;
   float:left;
@@ -796,14 +805,8 @@ background-size:115%;
   border-radius: 50%;
 }
 
-.page-numbers:hover{
-  color:#b9bed1;
-  /*background-color: white;*/
-}
-
 .page-item.active .page-numbers, .page-numbers:hover{
   font-size: 13px;
-  /*z-index: 6;*/
   color:#b9bed1;
   box-shadow: 0 20px 66px rgba(168,172,185, 0.7); 
 }
