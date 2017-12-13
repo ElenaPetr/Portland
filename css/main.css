@@ -147,44 +147,35 @@ body {
 }
 .col-slide{
   max-height: 500px;
-  overflow: hidden;
-  /*background: url('../images/7iphone_6_space_gray_v3_.RGB_color.0115.png') no-repeat;*/
- /* background-size: contain;*/
-  /*background-position: 58% 27%;*/
-  /*background-size: 188% !important; */
-  /*margin: 0 ;*/
+  display:inline-block;
 }
-/*.owl-carousel .owl-item img{
-  display: inline;
-  vertical-align: middle;
-   width:184% !important;
- position: absolute;
-  right:-179px;
-  top:-133px;
-}*/
+ 
 .card-group{
   padding:0 15px;
 }
-.img-slide{
-  /*float:right;*/
- /*  width:190% !important;
- position: absolute !important;
-  right:-38%;
-  top:-28%;*/
-}
 
-.text{
+.owl-carousel .owl-item img{
   float:left;
-margin:17.1% 0 17.1% 0;
+  height: 172%;
+  width:auto;
+margin-top: -66px;
+margin-left: 24px;
+
+}
+.text{
+  width:50%;
+  display: inline-block;
+  float:left;
+margin-top:8.6%;
 z-index: 20;
 font-family: 'Montserrat', sans-serif;
 padding-left: 3.313rem;
-padding-right: 2.1875rem;
+padding-right: 5.1875rem;
 padding-bottom: 1rem;
 padding-top: 0.625rem;
 }
 .text h3{
-  display: inline-block;
+  /*display: inline-block;*/
   margin-bottom: 10px;
   font-size: 42px;
   font-weight: 900;
@@ -192,14 +183,12 @@ padding-top: 0.625rem;
 }
 
 .p-slide{
-  display: inline-block;
+  /*display: inline-block;*/
   z-index: 20;
   font-family: 'Crimson Text', serif;
   font-size: 18px;
   line-height: 24px;
-  /*color:#d2d2d3;*/
-  color:white;
-  margin:20px 0 0 0;
+  
 }
 
 .btn-slide{
@@ -748,96 +737,74 @@ background-size:115%;
   height:380px;
 }
 
-/*pagination*/
-/*nav-pagination{
-  /*margin-bottom: 50px;
-  width: 100%;
-  background-color: white;
-}*/
-.page-item{
+.page-item {
   display: inline-block;
-  /*margin-right: 1%;*/
 }
-.page{
+.page {
   width:97.514%;
   padding:1.75% 0;
    margin: 0 15px;
-  background-color: yellow;
+  background-color: white;
   display:block;
 }
-
 
 .ul-page{
   margin-bottom: 0;
   display: block;
   text-align: center;
- 
 }
-/*.ul-pagination li:nth-child(2){
-  margin-left: 146px;
+.page-item
+{
+  margin-left: 10px;
 }
-.ul-pagination li:nth-child(9){
-  margin-right: 180px;
-}*/
 
 
-.page-item:first-child .page-link, .page-item:last-child .page-link{
+.page-numbers{
+    display: inline-block;
+    /*background: white;*/
+    height: 50px; 
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color:#3a405b;
+    font-weight: 600;
+    }
+.page-item:first-child .page-link, .page-item:last-child .page-link {
   border:none;
   border-radius: 50%;
 }
 
-.page-item:first-child{
+.page-item:first-child {
   border-right:1px solid #f0f2f7 !important;
   float:left;
 }
 
-.page-item:last-child{
+.page-item:last-child {
   float:right;
   border-left:1px solid #f0f2f7 !important;
-}
-
- .page-link{
-  /*width:5px;*/
-  border:none;
-  padding:15.5px 20px;
-  /*border-radius: 50%;*/
-  font-size: 14px;
-  color:#3a405b;
-  font-weight: 600;
-  margin:0;
-  /*line-height: 48px;*/
 }
 
 .pagination-sm .page-item:first-child .page-link,.pagination-sm .page-item:last-child .page-link,
 .li-page:first-child .page-link, .li-page:last-child .page-link{
   border-radius: 50%;
 }
-/*.previous a, .next a{
-  height: 90px;
-  padding:35px 95px;
-   
-}*/
-/*.previous a{
-  border-right:1px solid #f0f2f7 !important;
-}
-.next a{
-   border-left:1px solid #f0f2f7 !important;
-}*/
 
-.page-link:hover{
+.page-numbers:hover{
   color:#b9bed1;
-  background-color: white;
+  /*background-color: white;*/
 }
 
-.page-item.active .page-link, .page-link:active{
+.page-item.active .page-numbers, .page-numbers:hover {
   font-size: 13px;
-  /*z-index: 6;*/
+  z-index: 6;
   /*display: inline-block;*/
   color:#b9bed1;
   border-radius: 50%;
   background-color: white;
   box-shadow: 0 20px 66px rgba(168,172,185, 0.7); 
-  padding:15.5px 20px;
+  /*padding:15.5px 20px;*/
   /*#a8acb9;*/
 }
 
@@ -871,14 +838,14 @@ background-size:115%;
   /*height:340px;*/
 }
 .card-best-sellers .card-image{
-   /*display: table-cell;*/
+   display: inline-block;
   height:235px;
-  vertical-align: middle;
+  /*line-height: 235px;*/
   margin-bottom: 0;
 }
 .card-best-sellers .img-product{
-  /*display: inline-block;*/
-  width:188.3px;
+  display: inline-block;
+  width:70%;
   height: auto;
   margin:0;
   padding:0;
