@@ -912,18 +912,14 @@ font-size: 11px;
   margin-bottom: 46px;
 }
 
-@media(max-width: 576px){
+@media(max-width: 690px){
 
   .page-item:first-child, .page-item:last-child{
   padding-right:2vw;
    padding-left:2vw;
 }
-.text{
-  margin-left: 5vw;
-}
-.owl-carousel .owl-item img{
-  right:5%;
-  top:-14%;
-}
 
+.owl-carousel .owl-item img{
+  right:8%;
+  } 
 }
